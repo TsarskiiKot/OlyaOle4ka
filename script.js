@@ -13,31 +13,31 @@ const WORKS = [
   {
     id: 1, section: 'works',
     title: 'Caption 1', year: '', technique: '', desc: '',
-    src: 'фото/photo_2026-04-19_23-48-03.jpg',
+    src: 'Фото/photo_2026-04-19_23-48-03.jpg',
     positions: SLIDE_POSITIONS[0],
   },
   {
     id: 2, section: 'works',
     title: 'Caption 2', year: '', technique: '', desc: '',
-    src: 'фото/photo_2026-04-19_23-48-04.jpg',
+    src: 'Фото/photo_2026-04-19_23-48-04.jpg',
     positions: SLIDE_POSITIONS[1],
   },
   {
     id: 3, section: 'works',
     title: 'Caption 3', year: '', technique: '', desc: '',
-    src: 'фото/photo_2026-04-19_23-48-14.jpg',
+    src: 'Фото/photo_2026-04-19_23-48-14.jpg',
     positions: SLIDE_POSITIONS[2],
   },
   {
     id: 4, section: 'works',
     title: 'Caption 4', year: '', technique: '', desc: '',
-    src: 'фото/photo_2026-04-19_23-48-15.jpg',
+    src: 'Фото/photo_2026-04-19_23-48-15.jpg',
     positions: SLIDE_POSITIONS[3],
   },
   {
     id: 5, section: 'works',
     title: 'Caption 5', year: '', technique: '', desc: '',
-    src: 'фото/photo_2026-04-19_23-48-24.jpg',
+    src: 'Фото/photo_2026-04-19_23-48-24.jpg',
     positions: SLIDE_POSITIONS[4],
   },
 ];

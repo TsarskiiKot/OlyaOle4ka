@@ -46,38 +46,26 @@ svg { display: block; }
 
 .intro-inner {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
   animation: introReveal 2.8s ease forwards;
 }
 
-.intro-rule {
-  width: 0;
-  height: 1px;
-  background: rgba(255,255,255,0.35);
-  animation: introLine 1s ease forwards 0.2s;
-}
-
-.intro-name {
-  font-family: var(--font-sc);
-  font-weight: 300;
-  font-size: clamp(1.4rem, 3.5vw, 2.8rem);
-  letter-spacing: 0.35em;
-  color: #fff;
-  text-transform: uppercase;
+/* Logo on dark intro: invert black→white, then screen to drop the black bg */
+.intro-logo {
+  width: clamp(200px, 30vw, 440px);
+  height: auto;
+  filter: invert(1);
+  mix-blend-mode: screen;
   opacity: 0;
-  animation: introName 0.8s ease forwards 0.7s;
+  animation: introName 0.7s ease forwards 0.4s;
 }
 
-@keyframes introLine {
-  to { width: clamp(160px, 30vw, 380px); }
-}
 @keyframes introName {
   to { opacity: 1; }
 }
 @keyframes introReveal {
-  0%, 75% { opacity: 1; }
+  0%, 72% { opacity: 1; }
   100%     { opacity: 0; }
 }
 
@@ -110,8 +98,13 @@ svg { display: block; }
   display: flex;
   align-items: center;
   padding: 4px 0;
+  background: none;
+  border: none;
 }
-.logo svg { height: 48px; width: auto; }
+.logo-img {
+  height: 52px;
+  width: auto;
+}
 
 /* Nav – fills remaining space */
 .main-nav {
@@ -221,10 +214,11 @@ svg { display: block; }
   position: fixed;
   inset: 0;
   padding: 0;
-  display: flex;
   flex-direction: column;
   z-index: 1;
 }
+/* display: flex only when active — overrides .page.active's display:block */
+.page-hero.active { display: flex; }
 
 .hero-bg {
   flex: 1;
@@ -244,13 +238,16 @@ svg { display: block; }
 /* ── SECTION GRID ──────────────────────────────────── */
 .page-section {
   padding-top: var(--hh);
-  padding-left: 0;
-  padding-right: 0;
+  position: relative;
+  z-index: 2;
+  background: #fff;
 }
 
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding: 90px var(--pad) 60px;
 }
 
 /* Card */
@@ -273,6 +270,8 @@ svg { display: block; }
 .work-card-base {
   position: absolute;
   inset: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Slideshow layers (appear on hover) */
@@ -280,7 +279,6 @@ svg { display: block; }
   position: absolute;
   inset: 0;
   opacity: 0;
-  background-size: 150%;
   transition: opacity 0.08s;
 }
 .work-slide.on { opacity: 1; }
@@ -289,14 +287,14 @@ svg { display: block; }
 .work-card-title {
   font-family: var(--font-sc);
   font-weight: 300;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--orange);
-  padding: 11px var(--pad);
+  padding: 10px 0;
   opacity: 0;
   transition: opacity 0.3s;
-  min-height: 40px;
+  min-height: 38px;
   display: flex;
   align-items: center;
 }
@@ -304,7 +302,12 @@ svg { display: block; }
 
 
 /* ── WORK DETAIL ───────────────────────────────────── */
-.page-detail { padding-top: var(--hh); }
+.page-detail {
+  padding-top: var(--hh);
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
 
 .detail-wrap {
   max-width: 1100px;
@@ -379,7 +382,12 @@ svg { display: block; }
 
 
 /* ── CONTACTS ──────────────────────────────────────── */
-.page-contacts { padding-top: var(--hh); }
+.page-contacts {
+  padding-top: var(--hh);
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
 
 .contacts-wrap {
   max-width: 780px;
@@ -492,6 +500,14 @@ svg { display: block; }
 
 
 /* ── RESPONSIVE ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 60px;
+  }
+}
+
 @media (max-width: 900px) {
   :root { --pad: 28px; }
 
@@ -507,6 +523,8 @@ svg { display: block; }
   /* Single column grid on mobile */
   .works-grid {
     grid-template-columns: 1fr;
+    gap: 8px;
+    padding-top: 40px;
   }
 
   /* Nav as a vertical drawer on mobile */
