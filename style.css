@@ -346,7 +346,7 @@ svg { display: block; }
   font-size: 1.3rem;
   letter-spacing: 0.04em;
   line-height: 1.35;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 
 .det-meta-row {
@@ -356,7 +356,7 @@ svg { display: block; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #666;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .det-desc {
