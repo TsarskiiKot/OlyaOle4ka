@@ -18,7 +18,7 @@ const WORKS = [
   },
   {
     id: 2, section: 'works',
-    title: 'Caption 2', year: '', technique: '', desc: '',
+    title: 'Invading', year: '2025', technique: 'Etching, copper', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     src: 'Фото/photo_2026-04-19_23-48-04.jpg',
     positions: SLIDE_POSITIONS[1],
   },
