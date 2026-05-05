@@ -222,9 +222,11 @@ svg { display: block; }
 
 .hero-bg {
   flex: 1;
-  /* Sophisticated grey gradient – replace with real image */
-  background:
-    radial-gradient(ellipse 70% 60% at 60% 45%, #b8b8b0 0%, #888880 55%, #555550 100%);
+  background-color: #111;
+  background-image: url('Фото/АФІША5-1.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: center top;
 }
 
 .footer-hero {
@@ -558,6 +560,12 @@ svg { display: block; }
   }
 
   .header-end { margin-left: auto; }
+
+  .hero-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
 
   .detail-hero-wrap { padding-top: 32px; }
   .detail-body { padding: 32px 0; margin-top: 32px; }
