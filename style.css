@@ -223,7 +223,6 @@ svg { display: block; }
 .hero-bg {
   flex: 1;
   background-color: #111;
-  background-image: url('Фото/АФІША5-1.png');
   background-repeat: repeat-x;
   background-size: auto 100%;
   background-position: center top;
@@ -564,7 +563,6 @@ svg { display: block; }
   .hero-bg {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
   }
 
   .detail-hero-wrap { padding-top: 32px; }

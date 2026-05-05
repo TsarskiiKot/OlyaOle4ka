@@ -320,4 +320,7 @@ document.addEventListener('click', (e) => {
 
 /* ── Boot ───────────────────────────────────────────── */
 
+const heroBg = document.querySelector('.hero-bg');
+heroBg.style.backgroundImage = "url('Фото/АФІША5-1.png')";
+
 startIntro();
