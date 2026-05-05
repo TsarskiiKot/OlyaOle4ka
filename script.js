@@ -24,7 +24,7 @@ const WORKS = [
   },
   {
     id: 3, section: 'works',
-    title: 'Caption 3', year: '', technique: '', desc: '',
+    title: 'The dream', year: '2025', technique: 'Monotype, paper', desc: 'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.',
     src: 'Фото/photo_2026-04-19_23-48-14.jpg',
     positions: SLIDE_POSITIONS[2],
   },
@@ -36,7 +36,7 @@ const WORKS = [
   },
   {
     id: 5, section: 'works',
-    title: 'Caption 5', year: '', technique: '', desc: '',
+    title: 'Fragmented memory', year: '2026', technique: 'Pen and ink, paper', desc: 'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.',
     src: 'Фото/photo_2026-04-19_23-48-24.jpg',
     positions: SLIDE_POSITIONS[4],
   },
